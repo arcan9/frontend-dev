@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import image from "../images/undraw_dev_focus_re_6iwt.svg";
 
 export default function Header({ setAboutView }) {
@@ -11,7 +12,7 @@ export default function Header({ setAboutView }) {
         placeat rerum velit earum?
       </p>
       <button type='button' onClick={() => setAboutView(true)}>
-        More Info
+        <Link to='/about'>More Info</Link>
       </button>
     </>
   );
