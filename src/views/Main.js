@@ -4,7 +4,7 @@ import Context from "../Context";
 // My components
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
-import About from "../components/About";
+import About from "./About";
 
 export default function Main() {
   const [aboutView, setAboutView] = useState(false);
