@@ -7,11 +7,17 @@ export default function Header({ setAboutView }) {
     <>
       <img src={image} alt='header' />
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-        asperiores minus perspiciatis necessitatibus expedita ratione aliquam
-        placeat rerum velit earum?
+        Illustrator turned developer. Coming from the creative world, I love
+        tinkering with the frontend side of things, but I also have experience
+        putting together a backend structure. One of my ultimate goals as a
+        developer is to be a great storyteller, and incorporate facets of design
+        such as colors and imagery to achieve this.
       </p>
-      <button type='button' onClick={() => setAboutView(true)}>
+      <button
+        type='button'
+        onClick={() => setAboutView(true)}
+        className='button'
+      >
         <Link to='/about'>More Info</Link>
       </button>
     </>
