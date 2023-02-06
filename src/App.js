@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./views/Main";
 import About from "./views/About";
 import ProjectOne from "./views/ProjectOne";
+import ProjectTwo from "./views/ProjectTwo";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path='/' element={<Main />} />
         <Route path='/about' element={<About />} />
         <Route path='/project-one' element={<ProjectOne />} />
+        <Route path='/project-two' element={<ProjectTwo />} />
       </Routes>
     </BrowserRouter>
   );

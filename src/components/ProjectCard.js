@@ -1,13 +1,11 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
-export default function ProjectCard({ title, summary, setProjectView }) {
+export default function ProjectCard({ title, summary }) {
   return (
     <div className='card'>
       <p>{title}</p>
       <p>{summary}</p>
-      <button type='button' onClick={() => setProjectView(true)}>
-        More Info
-      </button>
     </div>
   );
 }
