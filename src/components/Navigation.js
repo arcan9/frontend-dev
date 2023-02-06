@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
   return (
     <nav className='site-nav grid'>
-      <h1>React Folio</h1>
+      <h1>React Folio!</h1>
       <ul>
         <li>
           <Link to='/'>Home</Link>
