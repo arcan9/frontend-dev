@@ -14,3 +14,14 @@
 /* desktop styles */
 @media screen and (min-width: 1200px) {
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  .card {
+    text-align: center;
+    background: lightgrey;
+    padding: 1.25rem;
+  }
+}
