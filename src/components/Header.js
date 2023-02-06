@@ -13,9 +13,12 @@ export default function Header() {
         developer is to be a great storyteller, and incorporate facets of design
         such as colors and imagery to achieve this.
       </p>
-      <button type='button' className='button'>
-        <Link to='/about'>More Info</Link>
-      </button>
+
+      <Link to='/about'>
+        <button type='button' className='button'>
+          More Info
+        </button>
+      </Link>
     </>
   );
 }

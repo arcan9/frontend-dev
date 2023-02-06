@@ -8,6 +8,7 @@ body {
   background: var(--off-white);
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   // overflow-x: hidden;
+  font-family: "Questrial", sans-serif;
 }
 
 .button {
@@ -15,14 +16,28 @@ body {
   border: 2px solid var(--magenta);
   color: var(--magenta);
   padding: 0.4rem 0.75rem;
-  border-radius: 20px;
+  border-radius: 12px;
   text-transform: uppercase;
   display: inline-block;
+  transition: var(--transition);
   // box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
   &:hover {
-    color: var(--off-white);
+    cursor: pointer;
     background: var(--magenta);
+    color: var(--off-white);
   }
+}
+
+.project-btn {
+  width: 6.25rem;
+  border-radius: 12px;
+  background: var(--magenta);
+  color: var(--off-white);
+  &:hover {
+    background: none;
+    color: var(--magenta);
+  }
+  // display: inline-block;
 }
 
 input,

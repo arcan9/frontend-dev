@@ -6,17 +6,23 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectSection() {
   return (
     <div className='project-grid'>
-      <ProjectCard title='Nekkoh' summary='This is project Nekkoh' />
+      <ProjectCard title='NEKKOH' summary='This is project Nekkoh' />
       <ProjectCard
-        title='Code Journal'
+        title='CODE JOURNAL'
         summary='This is project Code Journal'
       />
-      <button type='button'>
-        <Link to='/project-one'>More Info</Link>
-      </button>
-      <button type='button'>
-        <Link to='/project-two'>More Info</Link>
-      </button>
+
+      <Link to='/project-one'>
+        <button type='button' className='project-btn button'>
+          Detail
+        </button>
+      </Link>
+
+      <Link to='/project-two'>
+        <button type='button' className='project-btn button'>
+          Detail
+        </button>
+      </Link>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import React from "react";
 export default function ProjectCard({ title, summary }) {
   return (
     <div className='card'>
-      <p>{title}</p>
+      <h3 className='project-title'>{title}</h3>
       <p>{summary}</p>
     </div>
   );
