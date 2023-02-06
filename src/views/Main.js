@@ -1,5 +1,5 @@
 import React from "react";
-import Context from "../Context";
+// import Context from "../Context";
 
 // My components
 import Navigation from "../components/Navigation";
@@ -20,10 +20,12 @@ export default function Main() {
   // );
 
   return (
-    <Context.Provider>
+    // <Context.Provider>
+    <>
       <Navigation />
       <Header />
       <ProjectSection />
-    </Context.Provider>
+    </>
+    // {/* </Context.Provider> */}
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import image from "../images/undraw_dev_focus_re_6iwt.svg";
 
-export default function Header({ setAboutView }) {
+export default function Header() {
   return (
     <>
       <img src={image} alt='header' />
@@ -13,11 +13,7 @@ export default function Header({ setAboutView }) {
         developer is to be a great storyteller, and incorporate facets of design
         such as colors and imagery to achieve this.
       </p>
-      <button
-        type='button'
-        onClick={() => setAboutView(true)}
-        className='button'
-      >
+      <button type='button' className='button'>
         <Link to='/about'>More Info</Link>
       </button>
     </>
