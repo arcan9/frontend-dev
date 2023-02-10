@@ -4,7 +4,7 @@ import image from "../images/undraw_dev_focus_re_6iwt.svg";
 
 export default function Header() {
   return (
-    <>
+    <div className='grid'>
       <img src={image} alt='header' />
       <p>
         Illustrator turned developer. Coming from the creative world, I love
@@ -19,6 +19,6 @@ export default function Header() {
           More Info
         </button>
       </Link>
-    </>
+    </div>
   );
 }

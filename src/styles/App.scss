@@ -8,6 +8,21 @@
 }
 
 /* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.site-nav {
+  margin: 0 1.25rem;
+  h1 {
+    grid-column: 1/6; // adjust if you need more space
+    grid-row: 1;
+    padding: 0.6rem;
+    border-bottom: 3px solid var(--magenta);
+  }
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,6 +35,7 @@
 }
 
 .nav-links {
+  display: none;
   font-family: "Gaegu", cursive;
   font-size: 22px;
   a {
