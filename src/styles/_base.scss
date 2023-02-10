@@ -12,27 +12,25 @@ body {
   color: var(--magenta);
   background: var(--off-white);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.35' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-  // overflow-x: hidden;
   font-family: "Inter", Helvetica, Arial, sans-serif;
 }
 
 .button {
   font-family: "Gaegu", cursive;
   font-size: 18px;
-  background: var(--magenta);
-  border: 2px solid var(--magenta);
+  background: var(--dark-magenta);
+  border: 2px solid var(--dark-magenta);
   color: var(--off-white);
   padding: 0.4rem 0.75rem;
   border-radius: 12px;
   text-transform: uppercase;
   display: inline-block;
   transition: var(--transition);
-  // box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
   &:hover {
     cursor: pointer;
     background: none;
-    border: 2px solid var(--magenta);
-    color: var(--magenta);
+    border: 2px solid var(--dark-magenta);
+    color: var(--dark-magenta);
   }
 }
 
@@ -47,7 +45,6 @@ body {
     color: var(--magenta);
     border: 2px solid var(--off-white);
   }
-  // display: inline-block;
 }
 
 input,

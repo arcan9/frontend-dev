@@ -10,7 +10,6 @@ export default function Header() {
         <br />
         ASHELLE
       </h1>
-      {/* <h2></h2> */}
       <p className='leading'>Developer and illustrator. ✿</p>
       <p className='intro-text'>
         Coming from the creative world, I love tinkering with the frontend side
