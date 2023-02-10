@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
   return (
     <nav className='site-nav grid'>
-      <h1>React Folio</h1>
-      <ul>
+      <h1>React Folio!</h1>
+      <ul className='nav-links'>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to='/'>HOME</Link>
         </li>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to='/about'>ABOUT</Link>
         </li>
         <li>
-          <Link to='#projects'>Projects</Link>
+          <Link to='#projects'>PROJECTS</Link>
         </li>
         <li>
-          <Link to='#contact'>Contact</Link>
+          <Link to='#contact'>GET IN TOUCH</Link>
         </li>
       </ul>
     </nav>
