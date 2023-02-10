@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectSection() {
   return (
-    <div className='project-grid grid'>
+    <section className='project-grid grid'>
       <ProjectCard title='NEKKOH' summary='This is project Nekkoh' />
       <ProjectCard
         title='CODE JOURNAL'
@@ -23,6 +23,6 @@ export default function ProjectSection() {
           Detail
         </button>
       </Link>
-    </div>
+    </section>
   );
 }
