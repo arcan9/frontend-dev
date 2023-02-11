@@ -5,6 +5,7 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
 import ProjectSection from "../components/ProjectSection";
+import Tech from "../components/Tech";
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
       <Navigation />
       <Header />
       <ProjectSection />
+      <Tech />
     </>
     // {/* </Context.Provider> */}
   );

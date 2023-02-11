@@ -57,7 +57,10 @@
 
 /* PROJECTS */
 .project-bg {
-  background: var(--magenta);
+  background: url("../images/sun-tornado.svg");
+  /* background by SVGbackgrounds.com */
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 1.9rem 1.25rem;
   .projects-header {
     color: var(--off-white);
@@ -91,6 +94,28 @@
     text-align: center;
     background: var(--off-white);
     padding: 0.5rem;
+  }
+}
+
+/* TECH AND TOOLS */
+.tech-and-tools {
+  background: none;
+  border: 3px solid var(--gold-yellow);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px;
+  h2 {
+    font-family: "Gaegu", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 0 13px;
+  }
+  p {
+    text-align: center;
+    .title {
+      font-weight: 700;
+    }
   }
 }
 
