@@ -22,8 +22,8 @@ export default function Tech() {
       </p>
       <br />
       <p>
-        <span className='title'>TOOLS</span>: Git • Github • Webpack • AWS S3 •
-        DBDesigner • Adobe Photoshop • Procreate • Clip Studio Paint Pro
+        <span className='title'>TOOLS</span>: Git • Github • VSCode • Adobe
+        Photoshop • Procreate
       </p>
     </div>
   );

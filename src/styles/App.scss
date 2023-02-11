@@ -27,6 +27,29 @@
 }
 
 /* HERO */
+
+.greeting {
+  /* text animation */
+  span {
+    position: relative;
+    display: inline-block;
+    /*   text-transform: uppercase; */
+    animation: greeting 1s 3;
+    animation-delay: calc(0.1s * var(--i));
+  }
+}
+
+@keyframes greeting {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
 .hero {
   padding: 0 1.25rem 1.25rem 1.25rem;
   h1 {
