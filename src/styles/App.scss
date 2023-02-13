@@ -6,6 +6,11 @@
   grid-template-columns: repeat(8, 1fr);
 }
 
+.leading {
+  font-family: "Gaegu", cursive;
+  font-size: 26px;
+}
+
 /* NAVIGATION */
 .site-nav {
   margin: 0 1.25rem;
@@ -34,7 +39,7 @@
     position: relative;
     display: inline-block;
     /*   text-transform: uppercase; */
-    animation: greeting 1s 3;
+    animation: greeting 1s 2;
     animation-delay: calc(0.1s * var(--i));
   }
 }
@@ -57,10 +62,6 @@
     grid-column: 1/8;
     margin: 1.25rem 1.25rem 0.75rem 0;
     font-weight: 400;
-  }
-  .leading {
-    font-family: "Gaegu", cursive;
-    font-size: 26px;
   }
   .intro-text,
   .leading {
@@ -106,7 +107,6 @@
       padding: 5px 0 3px;
     }
     img {
-      width: 100%;
       object-fit: cover;
     }
     h3 {
@@ -128,9 +128,8 @@
   padding: 20px;
   margin: 25px;
   h2 {
-    font-family: "Gaegu", sans-serif;
+    font-family: "Gaegu", cursive;
     font-size: 40px;
-    letter-spacing: 0em;
     text-align: center;
     margin: 0 0 13px;
   }
@@ -139,6 +138,13 @@
     .title {
       font-weight: 700;
     }
+  }
+}
+
+/*  CONTACT */
+.contact {
+  .leading {
+    font-size: 35px;
   }
 }
 

@@ -49,8 +49,21 @@ body {
 
 input,
 textarea {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.6rem, 1rem;
-  border-radius: 20px;
-  border: 2px solid #9893d8;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: 0;
+  border-width: 0 0 2px;
+  background-color: #d7d6ed;
+  color: var(--black);
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+}
+
+[placeholder] {
+  font-size: 14px;
+  &:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease;
+    text-indent: -100%;
+    opacity: 1;
+  }
 }
