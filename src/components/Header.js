@@ -57,7 +57,7 @@ export default function Header() {
           >
             art of storytelling
           </RoughNotation>
-          , and use captivating colors and visuals to enhance the narrative
+          , and use beautiful colors and visuals to enhance the narrative
           experience.
         </RoughNotationGroup>
         <br />

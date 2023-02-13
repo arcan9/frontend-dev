@@ -6,13 +6,15 @@ export const projects = [
     title: "NEKKOH",
     summary: "This is project Nekkoh",
     image: nekkoh,
-    link: "/project-one"
+    link: "/project-one",
+    external: "https://nekkoh.com"
   },
   {
     title: "CODE JOURNAL",
     summary: "This is project Code Journal",
     image: codejournal,
-    link: "/project-two"
+    link: "/project-two",
+    external: "https://arcan9.github.io/code-journal/"
   }
 ];
 

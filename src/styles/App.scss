@@ -128,6 +128,8 @@
     text-align: center;
     background: var(--off-white);
     padding: 0.5rem;
+    position: relative;
+    transition: all 0.5s ease-in-out;
   }
   .controls {
     grid-row: 3;
@@ -140,6 +142,16 @@
     }
   }
 }
+
+// .card.prev {
+//   left: -300px;
+// }
+// .card.next {
+//   left: 300px;
+// }
+// .card.active {
+//   left: 0;
+// }
 
 /* TECH AND TOOLS */
 .tech-and-tools {

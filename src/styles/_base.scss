@@ -12,6 +12,14 @@ html {
   }
 }
 
+a {
+  color: var(--magenta);
+  transition: var(--transition);
+  &:hover {
+    color: var(--gold-yellow);
+  }
+}
+
 .body-container {
   overflow-x: hidden;
 }
