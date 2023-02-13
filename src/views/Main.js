@@ -14,8 +14,8 @@ export default function Main() {
     <>
       <Navigation />
       <Header />
-      <ProjectSection />
       <Tech />
+      <ProjectSection />
       <Contact />
     </>
     // {/* </Context.Provider> */}
