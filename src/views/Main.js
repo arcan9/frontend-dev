@@ -1,5 +1,6 @@
 import React from "react";
 // import Context from "../Context";
+import kitty from "../images/indy.gif";
 
 // My components
 import Navigation from "../components/Navigation";
@@ -16,6 +17,9 @@ export default function Main() {
       <Header />
       <Tech />
       <ProjectSection />
+      <div className='kitty'>
+        <img src={kitty} alt='kitty illustration' />
+      </div>
       <Contact />
     </>
     // {/* </Context.Provider> */}

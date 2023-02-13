@@ -12,19 +12,9 @@ export default function Header() {
         <span style={{ "--i": 3 }}>L</span>
         <span style={{ "--i": 4 }}>L</span>
         <span style={{ "--i": 5 }}>O</span>
-        <span style={{ "--i": 6 }}>,</span>
-        &nbsp;
-        <span style={{ "--i": 7 }}>I</span>
-        <span style={{ "--i": 8 }}>&apos;</span>
-        <span style={{ "--i": 9 }}>M</span>
+        , I&apos;M
         <br />
-        <span style={{ "--i": 10 }}>A</span>
-        <span style={{ "--i": 11 }}>S</span>
-        <span style={{ "--i": 12 }}>H</span>
-        <span style={{ "--i": 13 }}>E</span>
-        <span style={{ "--i": 14 }}>L</span>
-        <span style={{ "--i": 15 }}>L</span>
-        <span style={{ "--i": 16 }}>E</span>
+        ASHELLE
       </h1>
       <p className='leading'>Developer and illustrator. ✿</p>
       <p className='intro-text'>
@@ -50,7 +40,7 @@ export default function Header() {
           </RoughNotation>{" "}
           <RoughNotation
             type='underline'
-            color='#f9a84a'
+            color='#dd831c'
             padding={2}
             animationDelay={1000}
             animationDuration={500}
