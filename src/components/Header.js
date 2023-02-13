@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import image from "../images/Watering Plant_Isometric.svg";
 
 export default function Header() {
@@ -27,11 +28,48 @@ export default function Header() {
       </h1>
       <p className='leading'>Developer and illustrator. ✿</p>
       <p className='intro-text'>
-        LA-based. Full stack developer with a deep interest in frontend
-        exploration and intuitive experiences. Self-driven, collaborative, and
-        friendly :) Fan of video games, mystery books, and cats. My ultimate
-        goal as a developer is to master the art of storytelling, and use
-        captivating colors and visuals to enhance the narrative experience.
+        <RoughNotationGroup show={true}>
+          LA-based. Full stack{" "}
+          <RoughNotation
+            type='highlight'
+            color='#e8ea5b'
+            animationDelay={1000}
+            animationDuration={800}
+          >
+            developer
+          </RoughNotation>{" "}
+          with a deep interest in frontend exploration and intuitive
+          experiences.{" "}
+          <RoughNotation
+            type='highlight'
+            color='#ffd54f'
+            animationDelay={900}
+            animationDuration={800}
+          >
+            Self-driven,
+          </RoughNotation>{" "}
+          <RoughNotation
+            type='underline'
+            color='#f9a84a'
+            padding={2}
+            animationDelay={1000}
+            animationDuration={500}
+          >
+            collaborative, and friendly
+          </RoughNotation>{" "}
+          :) Fan of video games, mystery books, and cats. My ultimate goal as a
+          developer is to master the{" "}
+          <RoughNotation
+            type='circle'
+            color='#4d9632'
+            animationDelay={1000}
+            animationDuration={500}
+          >
+            art of storytelling
+          </RoughNotation>
+          , and use captivating colors and visuals to enhance the narrative
+          experience.
+        </RoughNotationGroup>
         <br />
         <Link to='/about'>
           <button type='button' className='button hero-btn'>

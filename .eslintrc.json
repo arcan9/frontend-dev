@@ -20,6 +20,14 @@
   },
   "plugins": ["react", "react-hooks"],
   "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ],
     "eqeqeq": 2,
     "no-console": 1,
     "react/display-name": 0,

@@ -17,10 +17,10 @@ export default function Contact() {
         or send a message using the form below!
       </p>
       <form>
-        <input type='text' placeholder='FULL NAME' />
-        <input type='email' placeholder='EMAIL ADDRESS' />
-        <textarea placeholder='TYPE HERE...🌱' rows='7' />
-        <button type='button' className='button'>
+        <input type='text' placeholder='FULL NAME' required={true} />
+        <input type='email' placeholder='EMAIL ADDRESS' required={true} />
+        <textarea placeholder='TYPE HERE...🌱' rows='7' required={true} />
+        <button type='submit' className='button'>
           Send <i className='fa-solid fa-arrow-right' />
         </button>
       </form>
