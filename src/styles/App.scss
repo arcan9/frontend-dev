@@ -125,10 +125,19 @@
       margin: 0;
     }
     grid-column: 1/9;
-    margin: 20px 0;
     text-align: center;
     background: var(--off-white);
     padding: 0.5rem;
+  }
+  .controls {
+    grid-row: 3;
+    .button {
+      margin: 0 6px;
+      &:hover {
+        border: 2px solid #5e9349;
+        color: var(--off-white);
+      }
+    }
   }
 }
 

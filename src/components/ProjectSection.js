@@ -29,6 +29,7 @@ export default function ProjectSection() {
       <h3 className='projects-header'>Projects</h3>
       <div className='project-grid grid'>
         <ProjectCard
+          // data at the current index from the `projects` object is passed as prop
           title={projects[currentIndex].title}
           summary={projects[currentIndex].summary}
           image={projects[currentIndex].image}
@@ -40,11 +41,11 @@ export default function ProjectSection() {
           </button>
         </Link>
         <div className='controls'>
-          <button type='button' onClick={handlePrev}>
-            Prev
+          <button type='button' onClick={handlePrev} className='button'>
+            <i className='fa-solid fa-arrow-left' />
           </button>
-          <button type='button' onClick={handleNext}>
-            Next
+          <button type='button' onClick={handleNext} className='button'>
+            <i className='fa-solid fa-arrow-right' />
           </button>
         </div>
       </div>
