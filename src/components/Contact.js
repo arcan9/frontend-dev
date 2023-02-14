@@ -17,9 +17,27 @@ export default function Contact() {
         or send a message using the form below!
       </p>
       <form>
-        <input type='text' placeholder='FULL NAME' required={true} />
-        <input type='email' placeholder='EMAIL ADDRESS' required={true} />
-        <textarea placeholder='TYPE HERE...🌱' rows='7' required={true} />
+        <label htmlFor='full-name'>Full Name</label>
+        <input
+          type='text'
+          placeholder='FULL NAME'
+          required={true}
+          id='full-name'
+        />
+        <label htmlFor='email'>Email</label>
+        <input
+          type='email'
+          placeholder='EMAIL ADDRESS'
+          required={true}
+          id='email'
+        />
+        <label htmlFor='message'>Message</label>
+        <textarea
+          placeholder='TYPE HERE...🌱'
+          rows='7'
+          required={true}
+          id='message'
+        />
         <button type='submit' className='button'>
           Send <i className='fa-solid fa-arrow-right' />
         </button>

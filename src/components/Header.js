@@ -7,14 +7,24 @@ export default function Header() {
   return (
     <section className='hero grid'>
       <h1 className='greeting'>
-        <span style={{ "--i": 1 }}>H</span>
-        <span style={{ "--i": 2 }}>E</span>
-        <span style={{ "--i": 3 }}>L</span>
-        <span style={{ "--i": 4 }}>L</span>
-        <span style={{ "--i": 5 }}>O</span>
-        , I&apos;M
+        <span style={{ "--i": 1 }} className='hello'>
+          H
+        </span>
+        <span style={{ "--i": 2 }} className='hello'>
+          E
+        </span>
+        <span style={{ "--i": 3 }} className='hello'>
+          L
+        </span>
+        <span style={{ "--i": 4 }} className='hello'>
+          L
+        </span>
+        <span style={{ "--i": 5 }} className='hello'>
+          O
+        </span>
+        , i&apos;m
         <br />
-        ASHELLE
+        ashelle
       </h1>
       <p className='leading'>Developer and illustrator. ✿</p>
       <p className='intro-text'>

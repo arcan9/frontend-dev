@@ -48,7 +48,8 @@
 
 .greeting {
   /* text animation */
-  span {
+  .hello {
+    font-weight: 700;
     position: relative;
     display: inline-block;
     animation: greeting 1s 1;
@@ -177,8 +178,7 @@
 /*  CONTACT */
 .contact {
   background: var(--light-pink);
-  margin: 0 auto 40px;
-  width: 80%;
+  margin: 0 25px 40px;
   padding: 30px 20px;
   border-radius: 12px;
   color: var(--dark-magenta);
@@ -198,6 +198,10 @@
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
+    label {
+      font-family: "Gaegu", sans-serif;
+      font-size: 22px;
+    }
   }
   input,
   textarea {
