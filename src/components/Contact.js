@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = e => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <section className='contact'>
       <h3 className='leading'>Get in Touch</h3>
@@ -16,13 +39,14 @@ export default function Contact() {
         </a>{" "}
         or send a message using the form below!
       </p>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <label htmlFor='full-name'>Full Name</label>
         <input
           type='text'
           placeholder='FULL NAME'
           required={true}
           id='full-name'
+          name='user_name'
         />
         <label htmlFor='email'>Email</label>
         <input
@@ -30,6 +54,7 @@ export default function Contact() {
           placeholder='EMAIL ADDRESS'
           required={true}
           id='email'
+          name='user_email'
         />
         <label htmlFor='message'>Message</label>
         <textarea
@@ -37,6 +62,7 @@ export default function Contact() {
           rows='7'
           required={true}
           id='message'
+          name='message'
         />
         <button type='submit' className='button'>
           Send <i className='fa-solid fa-arrow-right' />
