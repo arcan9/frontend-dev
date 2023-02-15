@@ -6,6 +6,24 @@
   grid-template-columns: repeat(8, 1fr);
 }
 
+.leading {
+  font-family: "Gaegu", sans-serif;
+  font-size: 26px;
+}
+
+.outer-link {
+  color: var(--dark-magenta);
+  font-weight: 700;
+  &:hover {
+    color: var(--gold-yellow);
+  }
+}
+
+.kitty {
+  width: 40%;
+  margin: 20px auto;
+}
+
 /* NAVIGATION */
 .site-nav {
   margin: 0 1.25rem;
@@ -18,7 +36,7 @@
   }
   .nav-links {
     display: none;
-    font-family: "Gaegu", cursive;
+    font-family: "Gaegu", sans-serif;
     font-size: 22px;
     a {
       color: var(--magenta);
@@ -27,6 +45,29 @@
 }
 
 /* HERO */
+
+.greeting {
+  /* text animation */
+  .hello {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    animation: greeting 1s 1;
+    animation-delay: calc(0.1s * var(--i));
+  }
+}
+
+@keyframes greeting {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
 .hero {
   padding: 0 1.25rem 1.25rem 1.25rem;
   h1 {
@@ -34,10 +75,6 @@
     grid-column: 1/8;
     margin: 1.25rem 1.25rem 0.75rem 0;
     font-weight: 400;
-  }
-  .leading {
-    font-family: "Gaegu", cursive;
-    font-size: 26px;
   }
   .intro-text,
   .leading {
@@ -57,14 +94,17 @@
 
 /* PROJECTS */
 .project-bg {
-  background: var(--magenta);
+  background: url("../images/sun-tornado.svg");
+  /* background by SVGbackgrounds.com */
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 1.9rem 1.25rem;
   .projects-header {
     color: var(--off-white);
     margin: 0;
     position: relative;
     top: -14px;
-    font-family: "Gaegu", cursive;
+    font-family: "Gaegu", sans-serif;
     font-size: 35px;
   }
 }
@@ -80,17 +120,94 @@
       padding: 5px 0 3px;
     }
     img {
-      width: 100%;
       object-fit: cover;
     }
     h3 {
       margin: 0;
     }
     grid-column: 1/9;
-    margin: 20px 0;
     text-align: center;
     background: var(--off-white);
     padding: 0.5rem;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  .controls {
+    grid-row: 3;
+    .button {
+      margin: 0 6px;
+      &:hover {
+        border: 2px solid #5e9349;
+        color: var(--off-white);
+      }
+    }
+  }
+}
+
+// .card.prev {
+//   left: -300px;
+// }
+// .card.next {
+//   left: 300px;
+// }
+// .card.active {
+//   left: 0;
+// }
+
+/* TECH AND TOOLS */
+.tech-and-tools {
+  background: none;
+  border: 3px solid var(--gold-yellow);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px;
+  h2 {
+    font-family: "Gaegu", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 13px;
+  }
+  p {
+    text-align: center;
+    .title {
+      font-weight: 700;
+    }
+  }
+}
+
+/*  CONTACT */
+.contact {
+  background: var(--light-pink);
+  margin: 0 25px 40px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  color: var(--dark-magenta);
+  h3 {
+    margin: 0;
+  }
+  h3,
+  p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .leading {
+    font-size: 35px;
+  }
+  form {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    label {
+      font-family: "Gaegu", sans-serif;
+      font-size: 22px;
+    }
+  }
+  input,
+  textarea {
+    width: 100%;
+    resize: none;
+    margin: 7px 0;
   }
 }
 
