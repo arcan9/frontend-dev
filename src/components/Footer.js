@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Footer() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  const updateYear = () => setCurrentYear(new Date().getFullYear());
+
+  useEffect(() => {
+    updateYear();
+  }, []);
+
   return (
     <footer>
       <div className='grid'>
-        <p className='copyright'>Copyright 2023</p>
+        <p className='copyright'>Coded with ❤ ©{currentYear}</p>
         <ul className='social'>
           <li>
             <a
@@ -12,7 +20,7 @@ export default function Footer() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              text
+              <i className='fa-brands fa-linkedin' />
             </a>
           </li>
           <li>
@@ -21,7 +29,7 @@ export default function Footer() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              text
+              <i className='fa-brands fa-square-github' />
             </a>
           </li>
         </ul>

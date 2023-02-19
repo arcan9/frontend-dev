@@ -14,8 +14,8 @@ export default function Main() {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   return (
-    <section>
-      <Layout>
+    <Layout>
+      <section>
         {isButtonClicked ? (
           <About />
         ) : (
@@ -29,7 +29,7 @@ export default function Main() {
             <Contact />
           </>
         )}
-      </Layout>
-    </section>
+      </section>
+    </Layout>
   );
 }

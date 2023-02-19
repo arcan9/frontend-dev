@@ -22,9 +22,9 @@ export default function Header({ setIsButtonClicked }) {
         <span style={{ "--i": 5 }} className='hello'>
           O
         </span>
-        , i&apos;m
+        , it&apos;s
         <br />
-        ashelle
+        Ashelle
       </h1>
       <p className='leading'>Developer and illustrator. ✿</p>
       <p className='intro-text'>

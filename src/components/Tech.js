@@ -4,7 +4,10 @@ export default function Tech() {
   return (
     <div className='tech-and-tools'>
       <h2>
-        Toolbox <i className='fa-solid fa-toolbox' />
+        Toolbox{" "}
+        <span>
+          <i className='fa-solid fa-toolbox' />
+        </span>
       </h2>
       <p>
         <span className='title'>FRONTEND</span>: JavaScript • React • CSS3 •
