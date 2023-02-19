@@ -25,6 +25,20 @@
   margin: 20px auto;
 }
 
+/* ANIMATION */
+.fade-in-text {
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* NAVIGATION */
 .site-nav {
   margin: 0 1.25rem;

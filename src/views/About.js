@@ -4,13 +4,13 @@ import kitty from "../images/indy.gif";
 
 export default function About() {
   return (
-    <section className='about'>
+    <section className='about fade-in-text'>
       <h1>
         <RoughNotation
           type='box'
           color='#dd831c'
           show={true}
-          animationDelay={1000}
+          animationDelay={500}
           animationDuration={1000}
           iterations={3}
         >
