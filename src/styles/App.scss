@@ -19,7 +19,8 @@
   }
 }
 
-.kitty {
+.kitty,
+.selfie {
   width: 40%;
   margin: 20px auto;
 }
@@ -208,6 +209,15 @@
     width: 100%;
     resize: none;
     margin: 7px 0;
+  }
+}
+
+/* ABOUT */
+.about {
+  margin: 0 25px 30px;
+  h1,
+  p {
+    text-align: center;
   }
 }
 
