@@ -12,7 +12,7 @@ export default function Tech() {
       </p>
       <br />
       <p>
-        <span className='title'>BACKEND</span>: Node • Express • AJAX/Fetch •
+        <span className='title'>BACKEND</span>: Node • Express • Axios/Fetch •
         Restful APIs • PostgreSQL • Cloud Firestore
       </p>
       <br />
