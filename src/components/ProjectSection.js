@@ -8,17 +8,17 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [next, setNext] = useState("next");
+  // const [next, setNext] = useState("next");
 
   const handlePrev = () => {
-    setNext("prev");
+    // setNext("prev");
     // below calculates the previous index of the data
     // making sure to loop to through the array when direction buttons are clicked
     setCurrentIndex((currentIndex + projects.length - 1) % projects.length);
   };
 
   const handleNext = () => {
-    setNext("next");
+    // setNext("next");
     // below calculates the next index of the data
     // making sure to loop to through the array when direction buttons are clicked
     setCurrentIndex((currentIndex + projects.length + 1) % projects.length);
@@ -34,7 +34,7 @@ export default function ProjectSection() {
           summary={projects[currentIndex].summary}
           image={projects[currentIndex].image}
           externalLink={projects[currentIndex].external}
-          next={next}
+          // next={next}
         />
         <Link to={projects[currentIndex].link}>
           <button type='button' className='project-btn button'>

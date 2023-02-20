@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import image from "../images/Watering Plant_Isometric.svg";
 
-export default function Header() {
+export default function Header({ setIsButtonClicked }) {
   return (
     <section className='hero grid'>
       <h1 className='greeting'>
@@ -22,9 +22,9 @@ export default function Header() {
         <span style={{ "--i": 5 }} className='hello'>
           O
         </span>
-        , i&apos;m
+        , it&apos;s
         <br />
-        ashelle
+        Ashelle
       </h1>
       <p className='leading'>Developer and illustrator. ✿</p>
       <p className='intro-text'>
@@ -32,8 +32,8 @@ export default function Header() {
           LA-based. Full stack{" "}
           <RoughNotation
             type='highlight'
-            color='#e8ea5b'
-            animationDelay={1000}
+            color='#d4e236'
+            animationDelay={1300}
             animationDuration={800}
           >
             developer
@@ -43,7 +43,7 @@ export default function Header() {
           <RoughNotation
             type='highlight'
             color='#ffd54f'
-            animationDelay={900}
+            animationDelay={1300}
             animationDuration={800}
           >
             Self-driven,
@@ -52,7 +52,7 @@ export default function Header() {
             type='underline'
             color='#dd831c'
             padding={2}
-            animationDelay={1000}
+            animationDelay={1100}
             animationDuration={500}
           >
             collaborative, and friendly
@@ -62,7 +62,7 @@ export default function Header() {
           <RoughNotation
             type='circle'
             color='#4d9632'
-            animationDelay={1000}
+            animationDelay={1100}
             animationDuration={500}
           >
             art of storytelling
@@ -72,7 +72,11 @@ export default function Header() {
         </RoughNotationGroup>
         <br />
         <Link to='/about'>
-          <button type='button' className='button hero-btn'>
+          <button
+            type='button'
+            className='button hero-btn'
+            onClick={() => setIsButtonClicked(true)}
+          >
             More Info
           </button>
         </Link>

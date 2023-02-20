@@ -1,8 +1,12 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   const form = useRef();
+  const confirmSent = () => toast.success("Thank you! Message sent.");
+  const errorSent = () =>
+    toast.error("Something went wrong! Message was not sent.");
 
   const sendEmail = e => {
     e.preventDefault();
@@ -17,9 +21,11 @@ export default function Contact() {
       .then(
         result => {
           console.log(result.text);
+          confirmSent();
         },
         error => {
           console.log(error.text);
+          errorSent();
         }
       );
     e.target.reset();
@@ -68,6 +74,7 @@ export default function Contact() {
           Send <i className='fa-solid fa-arrow-right' />
         </button>
       </form>
+      <Toaster />
     </section>
   );
 }

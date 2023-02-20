@@ -23,9 +23,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": true,
-        "optionalDependencies": true,
-        "peerDependencies": true
+        "devDependencies": true
       }
     ],
     "eqeqeq": 2,
