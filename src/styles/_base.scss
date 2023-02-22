@@ -1,5 +1,9 @@
 @forward "variables";
 
+.hidden {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;

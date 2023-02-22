@@ -58,14 +58,14 @@ export default function Header({ setIsButtonClicked }) {
             collaborative, and friendly
           </RoughNotation>{" "}
           :) Fan of video games, mystery books, and cats. My ultimate goal as a
-          developer is to master the{" "}
+          developer is to master the art of{" "}
           <RoughNotation
             type='circle'
             color='#4d9632'
             animationDelay={1100}
             animationDuration={500}
           >
-            art of storytelling
+            storytelling
           </RoughNotation>
           , and use beautiful colors and visuals to enhance the narrative
           experience.

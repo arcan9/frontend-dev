@@ -8,7 +8,6 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [next, setNext] = useState("next");
 
   const handlePrev = () => {
     // setNext("prev");
@@ -34,7 +33,6 @@ export default function ProjectSection() {
           summary={projects[currentIndex].summary}
           image={projects[currentIndex].image}
           externalLink={projects[currentIndex].external}
-          // next={next}
         />
         <Link to={projects[currentIndex].link}>
           <button type='button' className='project-btn button'>
