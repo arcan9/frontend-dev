@@ -11,8 +11,8 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className='grid'>
-        <p className='copyright'>Coded with ❤ ©{currentYear}</p>
+      <div className='grid footer-section'>
+        <p className='copyright'>Coded with ♥︎ ©{currentYear}</p>
         <ul className='social'>
           <li>
             <a
