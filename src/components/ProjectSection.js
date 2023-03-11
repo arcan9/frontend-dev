@@ -22,6 +22,7 @@ export default function ProjectSection() {
     setCurrentIndex((currentIndex + projects.length + 1) % projects.length);
   };
 
+  // Media queries from `react-responsive` dependency assigned to variables
   const isSmallTabletOrPhone = useMediaQuery({ maxWidth: 960 });
   const isLargeTabletOrLaptop = useMediaQuery({ minWidth: 960 });
 
@@ -29,8 +30,15 @@ export default function ProjectSection() {
     <section className='project-bg'>
       <h3 className='projects-header'>Projects</h3>
       <div className='project-grid grid'>
+        {/** Two cards are rendered if this media query is true */}
         {isLargeTabletOrLaptop && (
           <>
+            <ProjectCard
+              title={projects[1].title}
+              summary={projects[1].summary}
+              image={projects[1].image}
+              externalLink={projects[1].external}
+            />
             <ProjectCard
               title={projects[0].title}
               summary={projects[0].summary}
@@ -38,13 +46,14 @@ export default function ProjectSection() {
               externalLink={projects[0].external}
             />
             <ProjectCard
-              title={projects[1].title}
-              summary={projects[1].summary}
-              image={projects[1].image}
-              externalLink={projects[1].external}
+              title={projects[0].title}
+              summary={projects[0].summary}
+              image={projects[0].image}
+              externalLink={projects[0].external}
             />
           </>
         )}
+        {/** One card is rendered if this media query is true */}
         {isSmallTabletOrPhone && (
           <>
             <ProjectCard
