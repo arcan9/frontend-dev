@@ -4,7 +4,9 @@ import React from "react";
 export default function ProjectCard({ title, image, externalLink }) {
   return (
     <div className='card'>
-      <img src={image} alt='app screenshot' />
+      <a href={externalLink} target='_blank' rel='noopener noreferrer'>
+        <img src={image} alt='app screenshot' />
+      </a>
       <h3 className='project-title'>
         <a href={externalLink} target='_blank' rel='noopener noreferrer'>
           {title}
