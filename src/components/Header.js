@@ -23,45 +23,58 @@ export default function Header({ setIsButtonClicked }) {
           <span style={{ "--i": 5 }} className='hello'>
             O
           </span>
-          , it&apos;s
-          <br />
-          Ashelle
+          <span style={{ "--i": 6 }} className='hello'>
+            !
+          </span>
         </h1>
-        <p className='leading'>Developer and illustrator. ✿</p>
         <RoughNotationGroup show={true}>
-          LA-based, full stack{" "}
+          <p className='leading'>
+            I&apos;m a{" "}
+            <RoughNotation
+              type='highlight'
+              color='#d4e236'
+              animationDelay={1300}
+              animationDuration={700}
+            >
+              developer
+            </RoughNotation>{" "}
+            and{" "}
+            <RoughNotation
+              type='underline'
+              color='#dd831c'
+              padding={2}
+              animationDelay={1100}
+              animationDuration={600}
+            >
+              illustrator
+            </RoughNotation>
+          </p>
+          LA-based, full stack developer with a deep interest in{" "}
           <RoughNotation
-            type='highlight'
-            color='#d4e236'
-            animationDelay={1300}
-            animationDuration={800}
+            type='circle'
+            // padding={[2, 4]}
+            color='#f2be57'
+            animationDelay={1100}
+            animationDuration={500}
           >
-            developer
-          </RoughNotation>{" "}
-          with a deep interest in frontend exploration and intuitive
-          experiences.{" "}
+            frontend
+          </RoughNotation>
+          &nbsp;and intuitive experiences. Self-driven,{" "}
           <RoughNotation
             type='highlight'
             color='#ffd54f'
-            animationDelay={1300}
-            animationDuration={800}
-          >
-            Self-driven,
-          </RoughNotation>{" "}
-          <RoughNotation
-            type='underline'
-            color='#dd831c'
             padding={2}
             animationDelay={1100}
             animationDuration={500}
           >
-            collaborative, and friendly
+            collaborative,
           </RoughNotation>{" "}
-          :) Fan of video games, mystery books, and cats. My ultimate goal as a
-          developer is to master the art of{" "}
+          and friendly :) Fan of video games, mystery books, and cats. My
+          ultimate goal as a developer is to master the art of{" "}
           <RoughNotation
-            type='circle'
-            color='#4d9632'
+            type='box'
+            padding={2}
+            color='#dd831c'
             animationDelay={1100}
             animationDuration={500}
           >

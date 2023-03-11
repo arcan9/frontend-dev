@@ -241,7 +241,7 @@
 
   form {
     width: 80%;
-    max-width: 400px;
+    // max-width: 400px;
     margin: 20px auto;
     text-align: center;
     label {
@@ -386,14 +386,12 @@ footer {
   .hero,
   .project-grid,
   .tech-and-tools {
-    width: 100%;
+    // width: 100%;
     max-width: 1060px;
     margin: 0 auto;
   }
 
   .hero {
-    .greeting,
-    .leading,
     .intro-text {
       align-self: center;
     }
@@ -403,7 +401,12 @@ footer {
     width: 50%;
   }
 
+  .kitty {
+    width: 15%;
+  }
+
   .contact {
     margin-bottom: 180px;
+    width: 55%;
   }
 }
