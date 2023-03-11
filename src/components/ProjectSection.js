@@ -34,22 +34,25 @@ export default function ProjectSection() {
         {isLargeTabletOrLaptop && (
           <>
             <ProjectCard
+              title={projects[0].title}
+              summary={projects[0].summary}
+              image={projects[0].image}
+              externalLink={projects[0].external}
+              tagline={projects[0].tagline}
+            />
+            <ProjectCard
               title={projects[1].title}
               summary={projects[1].summary}
               image={projects[1].image}
               externalLink={projects[1].external}
+              tagline={projects[1].tagline}
             />
             <ProjectCard
-              title={projects[0].title}
-              summary={projects[0].summary}
-              image={projects[0].image}
-              externalLink={projects[0].external}
-            />
-            <ProjectCard
-              title={projects[0].title}
-              summary={projects[0].summary}
-              image={projects[0].image}
-              externalLink={projects[0].external}
+              title={projects[2].title}
+              summary={projects[2].summary}
+              image={projects[2].image}
+              externalLink={projects[2].external}
+              tagline={projects[2].tagline}
             />
           </>
         )}

@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-export default function ProjectCard({ title, image, externalLink }) {
+export default function ProjectCard({ title, image, externalLink, tagline }) {
   return (
     <div className='card'>
       <a href={externalLink} target='_blank' rel='noopener noreferrer'>
@@ -12,6 +12,7 @@ export default function ProjectCard({ title, image, externalLink }) {
           {title}
         </a>
       </h3>
+      <p>{tagline}</p>
     </div>
   );
 }
