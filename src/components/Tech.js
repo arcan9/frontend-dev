@@ -10,13 +10,13 @@ export default function Tech() {
         </span>
       </h2>
       <p>
-        <span className='title'>FRONTEND</span>: JavaScript • React • CSS3 •
-        HTML5 • Bootstrap
+        <span className='title'>FRONTEND</span>: JavaScript • React • HTML/CSS •
+        Bootstrap
       </p>
       <br />
       <p>
-        <span className='title'>BACKEND</span>: Node • Express • Axios/Fetch •
-        Restful APIs • PostgreSQL • Cloud Firestore
+        <span className='title'>BACKEND</span>: Node • Express • Axios • Restful
+        APIs • PostgreSQL • Cloud Firestore
       </p>
       <br />
       <p>

@@ -65,6 +65,7 @@ export default function ProjectSection() {
               summary={projects[currentIndex].summary}
               image={projects[currentIndex].image}
               externalLink={projects[currentIndex].external}
+              tagline={projects[currentIndex].tagline}
             />
             <ControlButtons handleNext={handleNext} handlePrev={handlePrev} />
           </>
