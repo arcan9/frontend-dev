@@ -6,30 +6,30 @@ import image from "../images/Watering Plant_Isometric.svg";
 export default function Header({ setIsButtonClicked }) {
   return (
     <section className='hero grid'>
-      <h1 className='greeting'>
-        <span style={{ "--i": 1 }} className='hello'>
-          H
-        </span>
-        <span style={{ "--i": 2 }} className='hello'>
-          E
-        </span>
-        <span style={{ "--i": 3 }} className='hello'>
-          L
-        </span>
-        <span style={{ "--i": 4 }} className='hello'>
-          L
-        </span>
-        <span style={{ "--i": 5 }} className='hello'>
-          O
-        </span>
-        , it&apos;s
-        <br />
-        Ashelle
-      </h1>
-      <p className='leading'>Developer and illustrator. ✿</p>
-      <p className='intro-text'>
+      <div className='intro-text'>
+        <h1 className='greeting'>
+          <span style={{ "--i": 1 }} className='hello'>
+            H
+          </span>
+          <span style={{ "--i": 2 }} className='hello'>
+            E
+          </span>
+          <span style={{ "--i": 3 }} className='hello'>
+            L
+          </span>
+          <span style={{ "--i": 4 }} className='hello'>
+            L
+          </span>
+          <span style={{ "--i": 5 }} className='hello'>
+            O
+          </span>
+          , it&apos;s
+          <br />
+          Ashelle
+        </h1>
+        <p className='leading'>Developer and illustrator. ✿</p>
         <RoughNotationGroup show={true}>
-          LA-based. Full stack{" "}
+          LA-based, full stack{" "}
           <RoughNotation
             type='highlight'
             color='#d4e236'
@@ -80,7 +80,7 @@ export default function Header({ setIsButtonClicked }) {
             More Info
           </button>
         </Link>
-      </p>
+      </div>
       <div className='hero-image'>
         <img src={image} alt='header' />
       </div>

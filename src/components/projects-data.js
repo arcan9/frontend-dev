@@ -25,7 +25,7 @@ export const projects = [
     image: codejournal,
     link: "/project-two",
     external: "https://arcan9.github.io/code-journal/",
-    tagline: "simple note taking"
+    tagline: "simply take notes"
   }
 ];
 

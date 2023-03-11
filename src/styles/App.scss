@@ -67,15 +67,14 @@
 }
 
 /* HERO */
-.greeting {
-  /* text animation */
-  .hello {
-    font-weight: 700;
-    position: relative;
-    display: inline-block;
-    animation: greeting 2s 1;
-    animation-delay: calc(0.1s * var(--i));
-  }
+
+/* text animation */
+.hello {
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  animation: greeting 2s 1;
+  animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes greeting {
@@ -109,9 +108,10 @@
 
   .hero-image {
     img {
-      width: 200%;
+      width: 280%;
     }
     grid-column: 6/9;
+    align-self: center;
   }
 }
 
@@ -135,38 +135,6 @@
     font-family: "Gaegu", sans-serif;
     font-size: 35px;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   background-repeat: repeat;
-  //   height: 10px;
-  //   background-size: 20px 20px;
-  //   background-image: radial-gradient(
-  //     circle at 10px -5px,
-  //     transparent 12px,
-  //     var(--off-white) 13px
-  //   );
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   background-repeat: repeat;
-  //   height: 15px;
-  //   background-size: 40px 20px;
-  //   background-image: radial-gradient(
-  //     circle at 10px 15px,
-  //     var(--off-white) 12px,
-  //     transparent 13px
-  //   );
-  // }
 }
 
 .project-grid {
@@ -345,7 +313,7 @@ footer {
 @media screen and (min-width: 620px) {
   .hero {
     .intro-text,
-    leading {
+    .leading {
       grid-column: 1/5;
     }
 
@@ -413,6 +381,22 @@ footer {
 @media screen and (min-width: 1200px) {
   .project-grid {
     width: 65%;
+  }
+
+  .hero,
+  .project-grid,
+  .tech-and-tools {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    .greeting,
+    .leading,
+    .intro-text {
+      align-self: center;
+    }
   }
 
   .tech-and-tools {
