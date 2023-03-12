@@ -1,6 +1,6 @@
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
-import kitty from "../images/indy.gif";
+import catPlaytime from "../images/Cat_Playtime.png";
 import Layout from "../components/Layout";
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
             About
           </RoughNotation>
         </h1>
-        <div>
+        <div className='about-text'>
           <h2>
             Ashelle • <small>/ə&apos;ʃɛl/</small> • <small>uh-shell</small>
           </h2>
@@ -32,7 +32,7 @@ export default function About() {
           temporibus, vero voluptatibus nemo!
         </div>
         <div className='selfie'>
-          <img src={kitty} alt='me' />
+          <img src={catPlaytime} alt='me' />
         </div>
       </section>
     </Layout>

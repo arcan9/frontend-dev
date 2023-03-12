@@ -19,10 +19,29 @@
   }
 }
 
-.kitty,
-.selfie {
+.kitty {
   width: 40%;
   margin: 0 auto 20px;
+}
+
+.selfie {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.selfie {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.selfie {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.selfie {
+  width: 80%;
+  margin: 20px auto;
 }
 
 .wave {
@@ -300,7 +319,7 @@ footer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
 
   h1,
@@ -349,11 +368,22 @@ footer {
   }
 }
 
+/* large tablets styles (portrait)*/
 @media screen and (min-width: 800px) {
   .project-bg {
     .projects-header {
       font-size: 50px;
     }
+  }
+
+  .selfie {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about {
+    margin-top: 0;
   }
 }
 
@@ -391,6 +421,14 @@ footer {
   .contact {
     width: 60%;
   }
+
+  .selfie {
+    width: 40%;
+  }
+
+  .about-text {
+    width: 70%;
+  }
 }
 
 /* desktop styles */
@@ -417,5 +455,13 @@ footer {
   .contact {
     margin-bottom: 180px;
     width: 55%;
+  }
+
+  .selfie {
+    width: 25%;
+  }
+
+  .about-text {
+    width: 50%;
   }
 }
