@@ -22,7 +22,7 @@
 .kitty,
 .selfie {
   width: 40%;
-  margin: 20px auto;
+  margin: 0 auto 20px;
 }
 
 .wave {
@@ -67,15 +67,14 @@
 }
 
 /* HERO */
-.greeting {
-  /* text animation */
-  .hello {
-    font-weight: 700;
-    position: relative;
-    display: inline-block;
-    animation: greeting 2s 1;
-    animation-delay: calc(0.1s * var(--i));
-  }
+
+/* text animation */
+.hello {
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  animation: greeting 2s 1;
+  animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes greeting {
@@ -109,9 +108,10 @@
 
   .hero-image {
     img {
-      width: 200%;
+      width: 280%;
     }
     grid-column: 6/9;
+    align-self: center;
   }
 }
 
@@ -123,7 +123,7 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 1.9rem 1.25rem;
+  padding: 0 1.25rem;
   margin: auto auto 0;
 
   .projects-header {
@@ -135,44 +135,12 @@
     font-family: "Gaegu", sans-serif;
     font-size: 35px;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   background-repeat: repeat;
-  //   height: 10px;
-  //   background-size: 20px 20px;
-  //   background-image: radial-gradient(
-  //     circle at 10px -5px,
-  //     transparent 12px,
-  //     var(--off-white) 13px
-  //   );
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   background-repeat: repeat;
-  //   height: 15px;
-  //   background-size: 40px 20px;
-  //   background-image: radial-gradient(
-  //     circle at 10px 15px,
-  //     var(--off-white) 12px,
-  //     transparent 13px
-  //   );
-  // }
 }
 
 .project-grid {
   // display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
+  gap: 1.75rem;
 
   .card {
     .project-title {
@@ -186,7 +154,7 @@
     h3 {
       margin: 0;
     }
-    border-radius: 8px;
+    border-radius: 12px;
     grid-column: 1/9;
     text-align: center;
     background: var(--off-white);
@@ -197,6 +165,7 @@
 
   .controls {
     grid-row: 3;
+    grid-column: 1/3;
     .button {
       margin: 0 6px;
       border: 3px solid var(--magenta);
@@ -272,7 +241,7 @@
 
   form {
     width: 80%;
-    max-width: 400px;
+    // max-width: 400px;
     margin: 20px auto;
     text-align: center;
     label {
@@ -344,7 +313,7 @@ footer {
 @media screen and (min-width: 620px) {
   .hero {
     .intro-text,
-    leading {
+    .leading {
       grid-column: 1/5;
     }
 
@@ -380,11 +349,73 @@ footer {
   }
 }
 
-/* large tablets and laptop styles */
+@media screen and (min-width: 800px) {
+  .project-bg {
+    .projects-header {
+      font-size: 50px;
+    }
+  }
+}
 
+/* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+
+    .card {
+      grid-column: auto;
+    }
+  }
+
+  .hero {
+    .intro-text {
+      align-self: center;
+    }
+  }
+
+  .tech-and-tools {
+    width: 65%;
+  }
+
+  .hero,
+  .tech-and-tools {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .kitty {
+    width: 18%;
+  }
+
+  .contact {
+    width: 60%;
+  }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
+  .project-grid {
+    width: 65%;
+  }
+
+  .tech-and-tools {
+    width: 50%;
+  }
+
+  .hero,
+  .project-grid,
+  .tech-and-tools {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .kitty {
+    width: 15%;
+  }
+
+  .contact {
+    margin-bottom: 180px;
+    width: 55%;
+  }
 }
