@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer>
       <div className='grid footer-section'>
-        <p className='copyright'>Coded with ♥︎ ©{currentYear}</p>
+        <p className='copyright'>Coded & illustrated by me ©{currentYear}</p>
         <ul className='social'>
           <li>
             <a

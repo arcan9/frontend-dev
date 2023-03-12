@@ -23,13 +23,23 @@ export default function About() {
           <h2>
             Ashelle • <small>/ə&apos;ʃɛl/</small> • <small>uh-shell</small>
           </h2>
-          ipsum dolor sit amet consectetur adipisicing elit. Velit deserunt quod
-          inventore delectus repellendus hic at perferendis sed ipsum quas
-          voluptate iusto a, placeat quam. Architecto et veritatis possimus
-          aliquam, asperiores porro repudiandae quisquam ratione est! Esse,
-          magnam placeat praesentium totam molestias nesciunt quas quasi id sunt
-          eligendi unde. Delectus placeat impedit voluptatem a ad architecto
-          temporibus, vero voluptatibus nemo!
+          <p>
+            I&apos;m a creative who&apos;s fallen in love with web development.
+            Previously, I designed personalized artwork for customers, drawing
+            inspiration from a charming and lively style similar to
+            illustrations found in storybooks. Now, in my role as a developer, I
+            strive to infuse this same cheerful and inviting aesthetic into my
+            creations for web and mobile applications. I also appreciate an
+            uncluttered and polished design. My aim is to develop apps that
+            convey a distinct message, while also entertaining and providing a
+            memorable experience for users. Combining my tech knowledge with my
+            love for art has been a fun experience so far in my journey. 💛
+          </p>
+          <p>
+            <strong>Interests</strong> (besides coding): adventure/puzzle games,
+            vintage book illustrations, concept art, Agatha Christie(-esque)
+            books, cute animals
+          </p>
         </div>
         <div className='selfie'>
           <img src={catPlaytime} alt='me' />
