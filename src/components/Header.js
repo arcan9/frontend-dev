@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import image from "../images/Watering Plant_Isometric.svg";
+// import image from "../images/Watering Plant_Isometric.svg";
+import catPlant from "../images/Cat_Plant.png";
 
 export default function Header({ setIsButtonClicked }) {
   return (
@@ -95,7 +96,7 @@ export default function Header({ setIsButtonClicked }) {
         </Link>
       </div>
       <div className='hero-image'>
-        <img src={image} alt='header' />
+        <img src={catPlant} alt='header' />
       </div>
     </section>
   );

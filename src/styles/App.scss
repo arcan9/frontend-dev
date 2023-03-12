@@ -368,6 +368,22 @@ footer {
     }
   }
 
+  .hero {
+    .intro-text {
+      align-self: center;
+    }
+  }
+
+  .tech-and-tools {
+    width: 65%;
+  }
+
+  .hero,
+  .tech-and-tools {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   .kitty {
     width: 18%;
   }
@@ -383,22 +399,15 @@ footer {
     width: 65%;
   }
 
+  .tech-and-tools {
+    width: 50%;
+  }
+
   .hero,
   .project-grid,
   .tech-and-tools {
-    // width: 100%;
     max-width: 1060px;
     margin: 0 auto;
-  }
-
-  .hero {
-    .intro-text {
-      align-self: center;
-    }
-  }
-
-  .tech-and-tools {
-    width: 50%;
   }
 
   .kitty {
