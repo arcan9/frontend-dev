@@ -166,6 +166,9 @@
       font-size: 20px;
       color: var(--magenta);
       padding: 5px 0 3px;
+      .fa-arrow-up-right-from-square {
+        font-size: medium;
+      }
     }
 
     .project-tagline {
@@ -468,7 +471,8 @@ footer {
 
   .hero,
   .project-grid,
-  .tech-and-tools {
+  .tech-and-tools,
+  .contact {
     max-width: 1060px;
     margin: 0 auto;
   }

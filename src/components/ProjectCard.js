@@ -15,7 +15,7 @@ export default function ProjectCard({
       </a>
       <h3 className='project-title'>
         <a href={externalLink} target='_blank' rel='noopener noreferrer'>
-          {title}
+          <i className='fa-solid fa-arrow-up-right-from-square' /> {title}
         </a>
       </h3>
       <p className='project-tagline'>{tagline}</p>
