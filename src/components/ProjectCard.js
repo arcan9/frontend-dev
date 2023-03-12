@@ -12,7 +12,7 @@ export default function ProjectCard({ title, image, externalLink, tagline }) {
           {title}
         </a>
       </h3>
-      <p>{tagline}</p>
+      <p className='project-tagline'>{tagline}</p>
     </div>
   );
 }

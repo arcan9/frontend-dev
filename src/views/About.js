@@ -41,6 +41,24 @@ export default function About() {
             books, cute animals
           </p>
         </div>
+        <div className='my-resume'>
+          🌱
+          <a
+            href='https://drive.google.com/file/d/1nBG1c1we6MWcaEmJNsu4BYIOAULoXxwk/view'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Resume
+          </a>{" "}
+          |{" "}
+          <a
+            href='https://linkedin.com/in/ashelle-cancio'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            LinkedIn
+          </a>
+        </div>
         <div className='selfie'>
           <img src={catPlaytime} alt='me' />
         </div>

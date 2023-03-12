@@ -167,6 +167,12 @@
       color: var(--magenta);
       padding: 5px 0 3px;
     }
+
+    .project-tagline {
+      font-family: "Gaegu", sans-serif;
+      font-size: 23px;
+    }
+
     img {
       object-fit: cover;
     }
@@ -322,9 +328,19 @@ footer {
   justify-content: center;
   align-items: center;
 
+  h1 {
+    font-family: "Gaegu", sans-serif;
+    font-size: 30px;
+  }
+
   h2,
   .about-text p:first-of-type {
     text-align: center;
+  }
+
+  .my-resume {
+    font-family: "Gaegu", sans-serif;
+    font-size: 22px;
   }
 }
 
