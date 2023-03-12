@@ -37,8 +37,8 @@ export default function About() {
           </p>
           <p>
             <strong>Interests</strong> (besides coding): adventure/puzzle games,
-            vintage book illustrations, concept art, Agatha Christie(-esque)
-            books, cute animals
+            vintage book illustrations, concept art, Agatha Christie mysteries,
+            cute animals
           </p>
         </div>
         <div className='my-resume'>
