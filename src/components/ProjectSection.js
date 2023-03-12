@@ -39,6 +39,7 @@ export default function ProjectSection() {
               image={projects[0].image}
               externalLink={projects[0].external}
               tagline={projects[0].tagline}
+              github={projects[0].github}
             />
             <ProjectCard
               title={projects[1].title}
@@ -46,6 +47,7 @@ export default function ProjectSection() {
               image={projects[1].image}
               externalLink={projects[1].external}
               tagline={projects[1].tagline}
+              github={projects[1].github}
             />
             <ProjectCard
               title={projects[2].title}
@@ -53,6 +55,7 @@ export default function ProjectSection() {
               image={projects[2].image}
               externalLink={projects[2].external}
               tagline={projects[2].tagline}
+              github={projects[2].github}
             />
           </>
         )}
@@ -66,6 +69,7 @@ export default function ProjectSection() {
               image={projects[currentIndex].image}
               externalLink={projects[currentIndex].external}
               tagline={projects[currentIndex].tagline}
+              github={projects[currentIndex].github}
             />
             <ControlButtons handleNext={handleNext} handlePrev={handlePrev} />
           </>
