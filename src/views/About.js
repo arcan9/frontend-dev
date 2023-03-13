@@ -27,7 +27,14 @@ export default function About() {
         </div>
         <div className='about-text'>
           <h2>
-            Ashelle • <small>/ə&apos;ʃɛl/</small> • <small>uh-shell</small>
+            Ashelle •{" "}
+            <span className='pronunciation'>
+              <small>/ə&apos;ʃɛl/</small>
+            </span>{" "}
+            •{" "}
+            <span className='pronunciation'>
+              <small>uh-shell</small>
+            </span>
           </h2>
           <p>
             I&apos;m a creative who&apos;s fallen in love with web development.
