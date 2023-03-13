@@ -32,6 +32,15 @@ export default function Footer() {
               <i className='fa-brands fa-square-github' />
             </a>
           </li>
+          <li>
+            <a
+              href='https://ravensketches.myportfolio.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <i className='fa-solid fa-brush' />
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
