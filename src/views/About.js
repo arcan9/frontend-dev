@@ -1,5 +1,6 @@
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
+import { Link } from "react-router-dom";
 import catPlaytime from "../images/Cat_Playtime.png";
 import Layout from "../components/Layout";
 
@@ -19,6 +20,11 @@ export default function About() {
             About
           </RoughNotation>
         </h1>
+        <div className='back-arrow'>
+          <Link to='/'>
+            <i className='fa-solid fa-arrow-left' />
+          </Link>
+        </div>
         <div className='about-text'>
           <h2>
             Ashelle • <small>/ə&apos;ʃɛl/</small> • <small>uh-shell</small>
