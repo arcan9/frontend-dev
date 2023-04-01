@@ -57,7 +57,7 @@ export default function About() {
         <div className='my-resume'>
           🌱
           <a
-            href='https://drive.google.com/file/d/1GPpIu3OYLBTFKHVz0z0mGpisLKMRZHyB/view?usp=share_link'
+            href='https://drive.google.com/file/d/1bHfoM0hXE_5II79HiliwauhygHu7uox4/view?usp=share_link'
             target='_blank'
             rel='noopener noreferrer'
           >
